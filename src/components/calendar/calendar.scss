@@ -1,0 +1,26 @@
+@import "../../assets/base/colors";
+
+$controlBlockHeight: 129px;
+$weekDaysRowHeight: 60px;
+$dayOfTheMonthHeight: 30px;
+$mobileWidth: 1300px;
+
+.calendar {
+  height: calc(100% - #{$controlBlockHeight});
+  overflow: hidden;
+  position: relative;
+  .grid {
+    height: 100%;
+    overflow: auto;
+    .items {
+      padding: $weekDaysRowHeight 30px 30px 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 1025px) {
+        width: 1300px;
+        padding: $weekDaysRowHeight 15px 15px 15px;
+      }
+    }
+  }
+}

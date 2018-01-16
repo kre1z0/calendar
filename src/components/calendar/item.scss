@@ -1,0 +1,47 @@
+@import "../../assets/base/colors";
+@import "./calendar";
+
+.item {
+  color: $steel;
+  padding: 20px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 113px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 #a4a8ab19;
+  &.dayHasObjects {
+    .dayMonth {
+      font-weight: bold;
+      color: $softGreen;
+    }
+  }
+  .dayMonth {
+    height: $dayOfTheMonthHeight;
+  }
+  .objects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - #{$dayOfTheMonthHeight});
+    color: $softGreen;
+    .dash {
+      color: $steel;
+    }
+    .idItem {
+      line-height: 1.1rem;
+    }
+  }
+  &:nth-child(7n+6) {
+    color: $dustyOrange;
+  }
+  &:nth-child(7n) {
+    color: $dustyOrange;
+  }
+  &.prevMonthDay,
+  &.nextMonthDay {
+    opacity: .4;
+  }
+  &.currentDay {
+    border: 1px solid $softGreen;
+  }
+}
