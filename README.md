@@ -1,1 +1,1 @@
-[Check demo](https://kre1z0.github.io/calendar/).
+[Check demo](https://kre1z0.github.io/calendar/)
