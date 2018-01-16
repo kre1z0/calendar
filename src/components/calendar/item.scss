@@ -31,11 +31,13 @@
       line-height: 1.1rem;
     }
   }
-  &:nth-child(7n+6) {
-    color: $dustyOrange;
-  }
-  &:nth-child(7n) {
-    color: $dustyOrange;
+  &.month {
+    &:nth-child(7n+6) {
+      color: $dustyOrange;
+    }
+    &:nth-child(7n) {
+      color: $dustyOrange;
+    }
   }
   &.prevMonthDay,
   &.nextMonthDay {

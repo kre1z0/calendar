@@ -1,8 +1,9 @@
 import React from 'react';
+import cn from 'classnames';
 
 import styles from './header.scss';
 
-const CalendarHeader = ({ scrollLeft, items }) => {
+const CalendarHeader = ({ scrollLeft, items, time }) => {
     return (
         <div
             style={{
@@ -14,7 +15,7 @@ const CalendarHeader = ({ scrollLeft, items }) => {
                 return (
                     <div
                         key={`${item}-${i}`}
-                        className={styles.item}
+                        className={cn(styles.item, styles[time])}
                         style={{
                             width: `calc(100% / ${items.length}`,
                         }}

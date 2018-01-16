@@ -30,6 +30,7 @@ const Item = ({
                 styles.item,
                 /*styles.dayHasObjects,*/
                 date.isSame(moment(), 'day') && styles.currentDay,
+                styles[time],
                 classNames,
             )}
             onTouchTap={() => onPickDate(date)}

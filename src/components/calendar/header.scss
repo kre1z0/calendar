@@ -25,8 +25,10 @@
     span:first-letter {
       text-transform: uppercase;
     }
-    &:nth-child(n+6):nth-child(-n+7) {
-      color: $dustyOrange;
+    &.month {
+      &:nth-child(n+6):nth-child(-n+7) {
+        color: $dustyOrange;
+      }
     }
   }
 }

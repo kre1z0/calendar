@@ -58,6 +58,7 @@ class Calendar extends Component {
         return (
             <div className={styles.calendar}>
                 <CalendarHeader
+                    time={time}
                     scrollLeft={scrollLeft}
                     items={this.initCalendarHeader(time)}
                 />
